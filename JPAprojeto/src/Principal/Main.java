@@ -9,10 +9,10 @@ public class Main {
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("oracle");
 		EntityManager em = emf.createEntityManager();
-		;;
+	
 		
 		/*Teste teste = new Teste();
-		 */
+		 
 		 em.getTransaction().begin();
          teste.setNome("FOi9 ");
          
