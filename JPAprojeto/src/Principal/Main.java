@@ -10,7 +10,7 @@ public class Main {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("oracle");
 		EntityManager em = emf.createEntityManager();
 	
-		
+		//fdfdfdfdfdf
 		/*Teste teste = new Teste();
 		 
 		 em.getTransaction().begin();
