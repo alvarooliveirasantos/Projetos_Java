@@ -1,0 +1,4 @@
+
+3squid:S1220""Move this file to a named package.H
+Xsquid:CallToDeprecatedMethod	".Remove this use of "Entity"; it is deprecated.(Ü¼µíH
+lsquid:S00116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ÿØšùÿÿÿÿH

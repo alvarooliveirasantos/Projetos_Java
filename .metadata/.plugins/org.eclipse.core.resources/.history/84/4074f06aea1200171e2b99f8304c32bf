@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0">
+<persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+ <provider>org.hibernate.ejb.HibernatePersistence</provider>
+ <class>br.main.Automovel</class>
+
+<properties>
+<property name="javax.persistence.jdbc.url"
+           value="oracle.jdbc.driver.OracleDriver" />
+<property name="javax.persistence.jdbc.user"
+          value="system" />
+<property name="javax.persistence.jdbc.password"
+          value="357159Aa" />
+<property name="hibernate.dialect"
+		  value="org.hibernate.dialect.OracleDialect" />
+<property name="hibernate.hbm2ddl.auto"
+		  value="update" />
+         
+</properties>
+</persistence-unit>
+</persistence>
+	

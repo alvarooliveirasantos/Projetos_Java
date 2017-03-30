@@ -1,0 +1,22 @@
+
+Zsquid:S1213";Move this constructor to comply with Java Code Conventions.(°µ°õýÿÿÿÿHÜ
+
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“‰û¥HÝ
+
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(èš£ÖHÞ
+
+dsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(¯˜«DHß
+
+msquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ížóƒúÿÿÿÿHà
+
+?squid:S11663"%Either log or rethrow this exception.(½‚ÀHá
+
+Isquid:S001084")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿHâ
+
+fsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(°µ°õýÿÿÿÿHã
+
+ksquid:S00116	"PRename this field "_Conn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜µ©›Hä
+
+vsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú‡ç½ÿÿÿÿÿHå
+
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(íð¢çHæ

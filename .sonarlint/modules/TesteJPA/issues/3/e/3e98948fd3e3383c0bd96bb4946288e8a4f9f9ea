@@ -1,0 +1,6 @@
+
+ksquid:UselessImportCheck"=Remove this unused import 'javax.persistence.GenerationType'.(ý÷õ¡8“¬Á¦±+H˜
+ksquid:UselessImportCheck"=Remove this unused import 'javax.persistence.GeneratedValue'.(¤®À‚8“¬Á¦±+H›
+tsquid:S00116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ÿØšùÿÿÿÿ8“¬Á¦±+H™
+bsquid:UselessImportCheck
+"5Remove this unused import 'javax.persistence.Column'.(ìûæH8“¬Á¦±+Hš

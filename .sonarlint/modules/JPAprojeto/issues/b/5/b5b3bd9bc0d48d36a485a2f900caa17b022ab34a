@@ -1,0 +1,6 @@
+
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(àªÅöHë?
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Ì»Ë¹Hí?
+[
+squid:S106'";Replace this usage of System.out or System.err by a logger.(¿ŸÌ…8ÆªŸÐ±+Hì?
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­áë—8ÆªŸÐ±+Hî?

@@ -1,0 +1,11 @@
+
+^squid:S1213!"8Move this variable to comply with Java Code Conventions.(çƒ‡Ëúÿÿÿÿ8÷·½Ğ±+Hï?
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æµŞ8÷·½Ğ±+Hô?
+|squid:S00116""ZRename this field "id_departamento" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œëµ°8Ï¹Ï±+Hö?
+xsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎŒŞ•8÷·½Ğ±+Hø?
+xsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æµŞ8÷·½Ğ±+Hñ?
+Ysquid:S1213""8Move this variable to comply with Java Code Conventions.(œëµ°8÷·½Ğ±+H÷?
+osquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦àòe8÷·½Ğ±+Hğ?
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€óŸÆ8÷·½Ğ±+Hõ?
+usquid:S00116"SRename this field "id_cargo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ûé8Ï¹Ï±+Hó?
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎŒŞ•8÷·½Ğ±+Hò?

@@ -1,0 +1,29 @@
+
+Z
+squid:S106>";Replace this usage of System.out or System.err by a logger.(¿Ãÿ8ˆ›¤Ü±+Hÿ@
+ksquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(½…¼r8ÃïÇÚ±+H@
+`
+squid:S1064";Replace this usage of System.out or System.err by a logger.(¨§þàüÿÿÿÿ8à‰‚Ü±+Hå@
+Z
+squid:S1069";Replace this usage of System.out or System.err by a logger.(¿Ãÿ8û‚®Û±+H·@
+Ysquid:S1118	":Add a private constructor to hide the implicit public one.(ò¥õìüÿÿÿÿH€@
+vsquid:UselessImportCheck"HRemove this unused import 'org.omg.CORBA.portable.ApplicationException'.(ÓŸë¹8¦æ²Ü±+H†A
+|squid:S1192"\Define a constant instead of duplicating this literal "1 - cadastro de funcionario" 3 times.(¿Ãÿ8ˆ›¤Ü±+Hû@
+\squid:S1854:"6Remove this useless assignment to local variable "op".(ßŠß¢úÿÿÿÿ8ÃÕ›Ü±+Hø@
+}squid:S1192"]Define a constant instead of duplicating this literal "3 - Cadastro de departamento" 3 times.(¿Ãÿ8ˆ›¤Ü±+Hü@
+[
+squid:S106,";Replace this usage of System.out or System.err by a logger.(îà´×8û‚®Û±+H´@
+`
+squid:S106F";Replace this usage of System.out or System.err by a logger.(ä›œ‡þÿÿÿÿ8¦æ²Ü±+H…A
+`
+squid:S106%";Replace this usage of System.out or System.err by a logger.(ôûºÌüÿÿÿÿ8³©´Ò±+Hÿ?
+`
+squid:S106.";Replace this usage of System.out or System.err by a logger.(…ÿ¿íúÿÿÿÿ8û‚®Û±+Hó@
+hsquid:S1132 "GMove the "0" string literal on the left side of this string comparison.(„‡Ää8û‚®Û±+H¹@
+Z
+squid:S106";Replace this usage of System.out or System.err by a logger.(¿Ãÿ8øÅÕÛ±+HÌ@
+squid:S1151#"iReduce this switch case number of lines from 6 to at most 5, for example by extracting code into methods.(ÙÆäÊÿÿÿÿÿ8û‚®Û±+Hº@
+Wsquid:S1854"6Remove this useless assignment to local variable "op".(¾ÿÜ8ˆ›¤Ü±+H€A
+Šsquid:S1151*"iReduce this switch case number of lines from 7 to at most 5, for example by extracting code into methods.(ç¿Ô8û‚®Û±+H»@
+vsquid:S1192"VDefine a constant instead of duplicating this literal "2 - Cadastro de cargo" 3 times.(¿Ãÿ8ˆ›¤Ü±+Hý@
+rsquid:S1192"RDefine a constant instead of duplicating this literal "Digite a funÃ§Ã£o" 3 times.(¿Ãÿ8ˆ›¤Ü±+Hþ@

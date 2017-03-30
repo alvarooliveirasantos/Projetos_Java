@@ -1,0 +1,8 @@
+package br.com.funcionarios;
+
+public class Cargo {
+	int id_cargo;
+	String nome;
+	int id_departamento;
+
+}

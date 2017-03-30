@@ -1,0 +1,12 @@
+
+[squid:S1118":Add a private constructor to hide the implicit public one.(÷° Ç8â„ˆ‚±+Hƒ
+Fsquid:S2068" Remove this hard-coded password.(ÉÔî¥ùÿÿÿÿ8˜Íº…±+Hş
+`
+squid:S106F";Replace this usage of System.out or System.err by a logger.(ù¼ÿ¾ûÿÿÿÿ8â„ˆ‚±+H
+4squid:S1220""Move this file to a named package.H†
+Fsquid:S1166N"%Either log or rethrow this exception.(”ı¾8˜Íº…±+H‡
+Isquid:S1148O"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8â„ˆ‚±+H…
+=squid:S2095>"Close this "ResultSet".(üİø–ÿÿÿÿÿ8˜Íº…±+Hÿ
+=squid:S2095 "Close this "Statement".(íñéşÿÿÿÿ8˜Íº…±+H€
+“squid:S1192-"rDefine a constant instead of duplicating this literal "INSERT INTO `filmes` (`titulo`, `ano`, `diretor`)" 3 times.(³Ø€Ã8˜Íº…±+H‚
+8squid:S2095"Close this "Connection".(€ƒ€8˜Íº…±+H„

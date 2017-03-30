@@ -1,0 +1,16 @@
+package br.com.operacoes;
+
+import javax.persistence.Persistence;
+
+import br.com.funcionarios.Funcionario;
+
+public class Cadastro {
+
+	EntityManegerFactory emf = Persistence.createEntityManagerFactory("oracle");
+	EntityManager em = emf.
+public void CadastroFuncionario(Funcionario funcionario){
+	
+}
+	
+
+}

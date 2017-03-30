@@ -1,0 +1,29 @@
+package br.com.funcionarios;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+	/*Cargo cargo = new Cargo();
+	cargo.nome="Programador";
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("oracle");
+	EntityManager em = emf.createEntityManager();
+	EntityTransaction tx = em.getTransaction();
+	tx.begin();
+	em.persist(cargo);
+	tx.commit();
+	em.close();
+	emf.close();
+	System.out.println("Cadastrado com sucesso");
+	*/
+	Scanner entrada = new Scanner(System.in);	
+	System.out.println("Digite a função" + "\n" +"1 - cadastro de funcionario" + "\n" + "2 - Cadastro de cargo" + "\n" + "3 - Cadastro de departamento");
+	String op = entrada.next();
+	
+	 
+	}
+	}
+
+

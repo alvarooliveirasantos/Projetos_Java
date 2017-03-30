@@ -1,0 +1,10 @@
+
+osquid:UselessImportCheck	"CRemove this unused import 'javax.management.RuntimeErrorException'.(ÍÖÅÓøÿÿÿÿHì
+Qsquid:S1135"2Complete the task associated to this TODO comment.(øõŒÛùÿÿÿÿHí
+xsquid:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦§²¶úÿÿÿÿHî
+fsquid:S00112?"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿHï
+fsquid:S00112:"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿHğ
+Ssquid:S1143?"4Remove this throw statement from this finally block.(Ò‚ÒéüÿÿÿÿHñ
+9squid:S2095*"Close this "PreparedStatement".(âæàØHò
+\squid:S1163?"=Refactor this code to not throw exceptions in finally blocks.(Ò‚ÒéüÿÿÿÿHó
+jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÚóŞÜûÿÿÿÿHô

@@ -1,0 +1,11 @@
+
+wsquid:S22930"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦§²¶úÿÿÿÿH
+8squid:S20955"Close this "PreparedStatement".(âæàØH
+dsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÅÞáëH
+Ksquid:S1135 "2Complete the task associated to this TODO comment.(‡ñÅ¼H
+3squid:S1220""Move this file to a named package.H
+esquid:S00112F"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿH
+esquid:S00112M"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿH
+nsquid:UselessImportCheck"CRemove this unused import 'javax.management.RuntimeErrorException'.(ÍÖÅÓøÿÿÿÿH
+Rsquid:S1143M"4Remove this throw statement from this finally block.(Ò‚ÒéüÿÿÿÿH
+[squid:S1163M"=Refactor this code to not throw exceptions in finally blocks.(Ò‚ÒéüÿÿÿÿH

@@ -1,0 +1,8 @@
+
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ï…ˆÜHÞ
+Ksquid:S1166"%Either log or rethrow this exception.(ñ“Š±üÿÿÿÿ8µýÁý°+Hó
+Hsquid:S1481"'Remove this unused "em" local variable.(ì¶žÐ8µýÁý°+Hò
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(æµ³’Hß
+Wsquid:S1854"6Remove this useless assignment to local variable "em".(ì¶žÐ8µýÁý°+Hô
+qsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áðë§üÿÿÿÿ8™Åý°+Hö

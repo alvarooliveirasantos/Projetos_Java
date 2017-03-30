@@ -1,0 +1,665 @@
+2017-03-24 10:48:09,084 [Worker-28] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted
+2017-03-24 14:31:47,773 [Worker-49] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted
+2017-03-27 10:10:51,756 [Worker-76] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted
+2017-03-28 14:02:58,078 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+2017-03-28 14:02:59,625 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+2017-03-28 14:03:00,502 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+2017-03-28 14:03:00,887 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+2017-03-28 14:03:01,091 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2017-03-28 14:03:01,206 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2017-03-28 14:03:01,373 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2017-03-28 14:03:01,492 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2017-03-28 14:03:02,214 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+2017-03-28 14:03:02,314 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+2017-03-28 14:03:02,349 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+2017-03-28 14:03:02,376 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+2017-03-28 14:03:02,437 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+2017-03-28 14:03:02,448 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+2017-03-28 14:03:02,469 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+2017-03-28 14:03:02,480 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+2017-03-28 14:03:02,512 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+2017-03-28 14:03:02,551 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+2017-03-28 14:03:02,567 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+2017-03-28 14:03:02,742 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+2017-03-28 14:03:02,752 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+2017-03-28 14:03:02,927 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+2017-03-28 14:03:02,951 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-parent/11/maven-parent-11.pom
+2017-03-28 14:03:03,126 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-parent/11/maven-parent-11.pom
+2017-03-28 14:03:03,137 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/apache/5/apache-5.pom
+2017-03-28 14:03:03,567 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/apache/5/apache-5.pom
+2017-03-28 14:03:03,591 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+2017-03-28 14:03:03,764 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+2017-03-28 14:03:03,781 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+2017-03-28 14:03:03,952 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+2017-03-28 14:03:04,067 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+2017-03-28 14:03:04,322 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+2017-03-28 14:03:04,503 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+2017-03-28 14:03:04,721 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+2017-03-28 14:03:04,764 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+2017-03-28 14:03:04,933 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+2017-03-28 14:03:04,965 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+2017-03-28 14:03:05,128 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+2017-03-28 14:03:05,149 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+2017-03-28 14:03:05,319 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+2017-03-28 14:03:05,350 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+2017-03-28 14:03:05,525 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+2017-03-28 14:03:05,570 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+2017-03-28 14:03:05,761 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+2017-03-28 14:03:06,068 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+2017-03-28 14:03:06,260 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+2017-03-28 14:03:06,290 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+2017-03-28 14:03:06,461 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+2017-03-28 14:03:06,489 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+2017-03-28 14:03:06,655 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+2017-03-28 14:03:06,681 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+2017-03-28 14:03:06,863 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+2017-03-28 14:03:06,899 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+2017-03-28 14:03:07,075 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+2017-03-28 14:03:07,107 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+2017-03-28 14:03:07,276 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+2017-03-28 14:03:07,304 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+2017-03-28 14:03:07,497 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+2017-03-28 14:03:07,515 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+2017-03-28 14:03:07,684 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+2017-03-28 14:03:07,716 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+2017-03-28 14:03:07,875 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+2017-03-28 14:03:08,142 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+2017-03-28 14:03:08,301 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+2017-03-28 14:03:08,313 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+2017-03-28 14:03:08,485 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+2017-03-28 14:03:08,518 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+2017-03-28 14:03:08,700 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+2017-03-28 14:03:08,718 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+2017-03-28 14:03:08,880 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+2017-03-28 14:03:08,894 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+2017-03-28 14:03:08,911 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+2017-03-28 14:03:08,935 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+2017-03-28 14:03:09,105 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+2017-03-28 14:03:09,151 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+2017-03-28 14:03:09,172 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+2017-03-28 14:03:09,197 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+2017-03-28 14:03:09,219 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+2017-03-28 14:03:09,257 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+2017-03-28 14:03:09,274 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+2017-03-28 14:03:09,318 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+2017-03-28 14:03:09,339 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+2017-03-28 14:03:09,384 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+2017-03-28 14:03:09,398 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+2017-03-28 14:03:09,455 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+2017-03-28 14:03:09,704 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+2017-03-28 14:03:09,755 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+2017-03-28 14:03:09,783 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+2017-03-28 14:03:09,812 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+2017-03-28 14:03:09,822 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+2017-03-28 14:03:09,862 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+2017-03-28 14:03:09,879 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+2017-03-28 14:03:09,893 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+2017-03-28 14:03:09,904 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+2017-03-28 14:03:09,918 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+2017-03-28 14:03:10,088 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+2017-03-28 14:03:10,102 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+2017-03-28 14:03:10,150 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+2017-03-28 14:03:10,193 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+2017-03-28 14:03:10,208 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+2017-03-28 14:03:10,228 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+2017-03-28 14:03:10,243 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+2017-03-28 14:03:10,261 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/log4j/log4j/1.2.12/log4j-1.2.12.pom
+2017-03-28 14:03:10,301 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/log4j/log4j/1.2.12/log4j-1.2.12.pom
+2017-03-28 14:03:10,330 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+2017-03-28 14:03:10,351 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+2017-03-28 14:03:10,377 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+2017-03-28 14:03:10,393 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+2017-03-28 14:03:10,407 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/com/google/google/1/google-1.pom
+2017-03-28 14:03:10,429 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/com/google/google/1/google-1.pom
+2017-03-28 14:03:10,443 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/junit/junit/3.8.2/junit-3.8.2.pom
+2017-03-28 14:03:10,456 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/junit/junit/3.8.2/junit-3.8.2.pom
+2017-03-28 14:03:10,509 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar
+2017-03-28 14:03:10,790 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar
+2017-03-28 14:03:10,802 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar
+2017-03-28 14:03:11,030 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar
+2017-03-28 14:03:11,045 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+2017-03-28 14:03:11,107 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+2017-03-28 14:03:11,112 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar
+2017-03-28 14:03:11,178 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar
+2017-03-28 14:03:11,185 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar
+2017-03-28 14:03:11,217 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar
+2017-03-28 14:03:11,222 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
+2017-03-28 14:03:11,256 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
+2017-03-28 14:03:11,262 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar
+2017-03-28 14:03:11,286 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar
+2017-03-28 14:03:11,289 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar
+2017-03-28 14:03:11,311 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar
+2017-03-28 14:03:11,318 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar
+2017-03-28 14:03:11,361 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar
+2017-03-28 14:03:11,365 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+2017-03-28 14:03:11,382 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+2017-03-28 14:03:11,387 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+2017-03-28 14:03:11,417 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+2017-03-28 14:03:11,421 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar
+2017-03-28 14:03:11,444 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar
+2017-03-28 14:03:11,450 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar
+2017-03-28 14:03:11,659 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar
+2017-03-28 14:03:11,664 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+2017-03-28 14:03:11,893 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+2017-03-28 14:03:11,903 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar
+2017-03-28 14:03:12,103 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar
+2017-03-28 14:03:12,108 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar
+2017-03-28 14:03:12,135 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar
+2017-03-28 14:03:12,148 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
+2017-03-28 14:03:12,394 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
+2017-03-28 14:03:12,399 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+2017-03-28 14:03:12,441 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+2017-03-28 14:03:12,447 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+2017-03-28 14:03:12,650 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+2017-03-28 14:03:12,656 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+2017-03-28 14:03:12,680 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+2017-03-28 14:03:12,698 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+2017-03-28 14:03:12,721 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+2017-03-28 14:03:12,725 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+2017-03-28 14:03:12,806 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+2017-03-28 14:03:12,811 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+2017-03-28 14:03:13,020 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+2017-03-28 14:03:13,035 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+2017-03-28 14:03:13,192 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+2017-03-28 14:03:13,196 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+2017-03-28 14:03:13,241 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+2017-03-28 14:03:13,246 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+2017-03-28 14:03:13,306 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+2017-03-28 14:03:13,311 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/log4j/log4j/1.2.12/log4j-1.2.12.jar
+2017-03-28 14:03:13,402 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/log4j/log4j/1.2.12/log4j-1.2.12.jar
+2017-03-28 14:03:13,408 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+2017-03-28 14:03:13,470 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+2017-03-28 14:03:13,492 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+2017-03-28 14:03:13,589 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+2017-03-28 14:03:13,611 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/junit/junit/3.8.2/junit-3.8.2.jar
+2017-03-28 14:03:13,717 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/junit/junit/3.8.2/junit-3.8.2.jar
+2017-03-28 14:03:23,030 [Worker-90] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.yaw.sjpac:swing-jpa-crud:0.0.1-SNAPSHOT @ C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\pom.xml.
+2017-03-28 14:03:23,054 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.pom
+2017-03-28 14:03:23,101 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.pom
+2017-03-28 14:03:23,131 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-parent/1.6.4/slf4j-parent-1.6.4.pom
+2017-03-28 14:03:23,277 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-parent/1.6.4/slf4j-parent-1.6.4.pom
+2017-03-28 14:03:23,526 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-core/4.1.6.Final/hibernate-core-4.1.6.Final.pom
+2017-03-28 14:03:23,725 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-core/4.1.6.Final/hibernate-core-4.1.6.Final.pom
+2017-03-28 14:03:23,900 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/antlr/antlr/2.7.7/antlr-2.7.7.pom
+2017-03-28 14:03:24,105 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/antlr/antlr/2.7.7/antlr-2.7.7.pom
+2017-03-28 14:03:24,296 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.pom
+2017-03-28 14:03:24,670 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.pom
+2017-03-28 14:03:24,931 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/jboss-parent/7/jboss-parent-7.pom
+2017-03-28 14:03:25,299 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/jboss-parent/7/jboss-parent-7.pom
+2017-03-28 14:03:25,340 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final.pom
+2017-03-28 14:03:25,537 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final.pom
+2017-03-28 14:03:25,566 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/spec/jboss-specs-parent/1.0.0.Beta2/jboss-specs-parent-1.0.0.Beta2.pom
+2017-03-28 14:03:25,640 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/spec/jboss-specs-parent/1.0.0.Beta2/jboss-specs-parent-1.0.0.Beta2.pom
+2017-03-28 14:03:25,660 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/jboss-parent/5/jboss-parent-5.pom
+2017-03-28 14:03:25,836 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/jboss-parent/5/jboss-parent-5.pom
+2017-03-28 14:03:26,045 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.pom
+2017-03-28 14:03:26,229 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.pom
+2017-03-28 14:03:26,416 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.pom
+2017-03-28 14:03:26,589 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.pom
+2017-03-28 14:03:26,813 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final.pom
+2017-03-28 14:03:26,989 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final.pom
+2017-03-28 14:03:27,172 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.pom
+2017-03-28 14:03:27,349 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/logging/jboss-logging/3.1.0.CR2/jboss-logging-3.1.0.CR2.pom
+2017-03-28 14:03:27,556 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/jboss-parent/6/jboss-parent-6.pom
+2017-03-28 14:03:27,767 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/jboss-parent/6/jboss-parent-6.pom
+2017-03-28 14:03:27,961 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-entitymanager/4.1.6.Final/hibernate-entitymanager-4.1.6.Final.pom
+2017-03-28 14:03:28,163 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-entitymanager/4.1.6.Final/hibernate-entitymanager-4.1.6.Final.pom
+2017-03-28 14:03:28,360 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.pom
+2017-03-28 14:03:28,839 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.pom
+2017-03-28 14:03:29,235 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-validator-parent/4.3.1.Final/hibernate-validator-parent-4.3.1.Final.pom
+2017-03-28 14:03:29,417 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-validator-parent/4.3.1.Final/hibernate-validator-parent-4.3.1.Final.pom
+2017-03-28 14:03:29,449 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.pom
+2017-03-28 14:03:29,639 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.pom
+2017-03-28 14:03:29,993 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar
+2017-03-28 14:03:30,427 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar
+2017-03-28 14:03:33,596 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-core/4.1.6.Final/hibernate-core-4.1.6.Final.jar
+2017-03-28 14:03:34,551 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-core/4.1.6.Final/hibernate-core-4.1.6.Final.jar
+2017-03-28 14:03:34,863 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/antlr/antlr/2.7.7/antlr-2.7.7.jar
+2017-03-28 14:03:35,090 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/antlr/antlr/2.7.7/antlr-2.7.7.jar
+2017-03-28 14:03:35,264 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar
+2017-03-28 14:03:35,524 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar
+2017-03-28 14:03:35,532 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+2017-03-28 14:03:35,570 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+2017-03-28 14:03:35,742 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar
+2017-03-28 14:03:35,955 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar
+2017-03-28 14:03:36,322 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar
+2017-03-28 14:03:36,603 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar
+2017-03-28 14:03:36,788 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final.jar
+2017-03-28 14:03:37,200 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/common/hibernate-commons-annotations/4.0.1.Final/hibernate-commons-annotations-4.0.1.Final.jar
+2017-03-28 14:03:37,508 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-entitymanager/4.1.6.Final/hibernate-entitymanager-4.1.6.Final.jar
+2017-03-28 14:03:37,725 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-entitymanager/4.1.6.Final/hibernate-entitymanager-4.1.6.Final.jar
+2017-03-28 14:03:38,036 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar
+2017-03-28 14:03:38,265 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar
+2017-03-28 14:03:38,271 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://10.130.214.75:8081/repository/maven-public/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+2017-03-28 14:03:38,560 [Worker-90] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://10.130.214.75:8081/repository/maven-public/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+2017-03-28 14:03:44,372 [Worker-90] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/main/java
+2017-03-28 14:03:44,373 [Worker-90] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /swing-jpa-crud-master/src/main/resources
+2017-03-28 14:03:44,381 [Worker-90] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/test/java
+2017-03-28 14:03:45,082 [Worker-90] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 48 sec
+2017-03-28 14:03:54,758 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:03:54,763 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:03:54,838 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:03:54,838 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:04:03,856 [Worker-91] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-28 14:04:04,672 [Worker-91] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.yaw.sjpac:swing-jpa-crud:0.0.1-SNAPSHOT @ C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\pom.xml.
+2017-03-28 14:04:04,951 [Worker-91] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/main/java
+2017-03-28 14:04:04,952 [Worker-91] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /swing-jpa-crud-master/src/main/resources
+2017-03-28 14:04:04,952 [Worker-91] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/test/java
+2017-03-28 14:04:05,121 [Worker-91] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-03-28 14:04:06,622 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:04:06,623 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:04:06,643 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:04:06,644 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:06:10,383 [Worker-80] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-28 14:06:10,802 [Worker-80] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.yaw.sjpac:swing-jpa-crud:0.0.1-SNAPSHOT @ C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\pom.xml.
+2017-03-28 14:06:10,985 [Worker-80] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/main/java
+2017-03-28 14:06:10,985 [Worker-80] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /swing-jpa-crud-master/src/main/resources
+2017-03-28 14:06:10,985 [Worker-80] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/test/java
+2017-03-28 14:06:11,199 [Worker-80] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-03-28 14:06:12,645 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:06:12,647 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:06:12,663 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:06:12,664 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:07:39,489 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-03-28 14:07:49,936 [Worker-97] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master
+2017-03-28 14:07:49,937 [Worker-97] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
+2017-03-28 14:12:16,527 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:12:16,532 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:12:16,534 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:12:16,534 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:15:17,031 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:15:17,033 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:15:17,036 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:15:17,036 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:16:56,068 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:16:56,070 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:16:56,072 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:16:56,072 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:17:02,055 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:17:02,057 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:17:02,059 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:17:02,059 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:17:06,606 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:17:06,607 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:17:06,610 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:17:06,610 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:17:40,613 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:17:40,614 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:17:40,616 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:17:40,616 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:18:20,493 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:18:20,494 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:18:20,497 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:18:20,498 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:21:40,525 [Worker-109] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-28 14:21:40,950 [Worker-109] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.yaw.sjpac:swing-jpa-crud:0.0.1-SNAPSHOT @ C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\pom.xml.
+2017-03-28 14:21:41,761 [Worker-109] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/main/java
+2017-03-28 14:21:41,761 [Worker-109] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /swing-jpa-crud-master/src/main/resources
+2017-03-28 14:21:41,762 [Worker-109] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /swing-jpa-crud-master/src/test/java
+2017-03-28 14:21:41,913 [Worker-109] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-03-28 14:21:42,883 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:21:42,884 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-28 14:21:42,914 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-28 14:21:42,914 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master\src\test\resources
+2017-03-28 14:22:06,761 [Worker-108] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\treina\Desktop\Projetos Tomcat\swing-jpa-crud-master
+2017-03-28 14:22:06,761 [Worker-108] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
+2017-03-28 14:45:47,099 [Worker-147] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ASTFrame references closed project swing-jpa-crud-master
+org.eclipse.core.runtime.CoreException: Launch configuration ASTFrame references closed project swing-jpa-crud-master
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:309) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-03-28 14:45:47,113 [Worker-147] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ASTFrame references closed project swing-jpa-crud-master
+org.eclipse.core.runtime.CoreException: Launch configuration ASTFrame references closed project swing-jpa-crud-master
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:552) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:425) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:310) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-03-28 14:45:47,127 [Worker-147] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration ASTFrame references closed project swing-jpa-crud-master
+org.eclipse.core.runtime.CoreException: Launch configuration ASTFrame references closed project swing-jpa-crud-master
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1280) ~[org.eclipse.jdt.launching_3.8.101.v20161111-2014.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:226) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.8.0.v20160509-1230.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:207) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2161) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:384) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:250) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:220) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:173) [org.eclipse.debug.core_3.10.100.v20160419-1720.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:311) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:335) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.7.0.20160603-1933.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2017-03-28 15:16:55,116 [Worker-49] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted
+2017-03-28 15:57:10,194 [Worker-49] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted
+2017-03-29 10:38:01,532 [Worker-1] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted
+2017-03-29 15:24:50,586 [Worker-11] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted
+2017-03-30 10:34:33,122 [Worker-51] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.5.v20161130-1427.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/neon/): Connect to download.eclipse.org:80 timed out
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.eclipse.org:80 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119) ~[na:na]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177) ~[na:na]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611) ~[na:na]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446) ~[na:na]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[na:na]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57) ~[na:na]
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:158) ~[na:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:287) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243) ~[org.eclipse.aether.transport.http_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59) ~[org.eclipse.aether.spi_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	... 13 common frames omitted

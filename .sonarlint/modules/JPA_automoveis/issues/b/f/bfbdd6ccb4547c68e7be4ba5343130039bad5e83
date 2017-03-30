@@ -1,0 +1,8 @@
+
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(ΰªΕφH“	
+qsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(απλ§όÿÿÿÿ8ιναύ°+H”	
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ο…ά8ιναύ°+H•	
+Hsquid:S1481"'Remove this unused "em" local variable.(μ¶Π8ιναύ°+H–	
+Ksquid:S1166"%Either log or rethrow this exception.(ρ“±όÿÿÿÿ8ιναύ°+H—	
+Wsquid:S1854"6Remove this useless assignment to local variable "em".(μ¶Π8ιναύ°+H	

@@ -1,0 +1,8 @@
+package br.com.funcionarios;
+
+public class Departamento {
+
+	int id_departamento;
+	String nome;
+	
+}
